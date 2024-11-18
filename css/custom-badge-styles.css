@@ -1,0 +1,78 @@
+/* استایل‌های کلی برای بج‌ها */
+.custom-badge {
+    position: absolute; /* بج را روی تصویر محصول قرار می‌دهد */
+    top: 10px; /* فاصله از بالای تصویر */
+    left: 10px; /* فاصله از سمت چپ تصویر */
+    background-color: black; /* زمینه مشکی */
+    color: white; /* فونت سفید */
+    padding: 5px 10px; /* حاشیه داخلی بج */
+    font-size: 12px; /* اندازه فونت */
+    font-weight: bold; /* فونت ضخیم */
+    border-radius: 3px; /* گوشه‌های گرد */
+    z-index: 10; /* نمایش در بالاترین لایه */
+    pointer-events: none; /* جلوگیری از کلیک روی بج */
+}
+
+/* بج برای محصولات پیش‌خرید */
+.custom-badge.custom-badge-backorder {
+    background-color: darkred; /* رنگ خاص برای پیش‌خرید */
+}
+
+/* بج برای موجودی محدود */
+.custom-badge.custom-badge-low-stock {
+    background-color: darkorange; /* رنگ خاص برای موجودی کم */
+}
+
+/* بج برای محصولات ناموجود */
+.custom-badge.custom-badge-out-of-stock {
+    background-color: gray; /* رنگ خاص برای محصولات ناموجود */
+}
+
+/* نسخه موبایل */
+@media (max-width: 768px) {
+    .custom-badge {
+        font-size: 10px; /* کاهش سایز فونت برای دستگاه‌های کوچکتر */
+        padding: 3px 8px; /* کاهش حاشیه داخلی */
+    }
+}
+/* استایل‌های کلی برای بج‌ها */
+
+/* تنظیم اندازه فونت برای کلاس shop_attributes */
+.shop_attributes {
+    font-size: 13px !important; /* اندازه فونت ثابت به 13px */
+}
+
+/* تنظیم اندازه فونت برای کلاس shop_attributes در نسخه موبایل */
+@media (max-width: 768px) {
+    .shop_attributes {
+        font-size: 12px !important; /* تنظیم اندازه فونت به 12px */
+    }
+}
+
+/* تنظیم اندازه فونت برای کلاس shop_attributes */
+
+
+/* تنظیم فاصله بین مسیر آدرس و منو بالا برای دسکتاپ */
+[data-vertical-spacing*=top] {
+    padding-top: 10px !important; /* تنظیم فاصله بالا به 10px برای نمایشگرهای عادی */
+}
+
+/* تنظیم فاصله بین مسیر آدرس و منو بالا برای نسخه موبایل */
+@media (max-width: 768px) {
+    [data-vertical-spacing*=top] {
+        padding-top: 15px !important; /* کاهش فاصله بالا به 8px برای دستگاه‌های کوچکتر */
+    }
+}
+
+
+
+.ct-product-gallery-container {
+    position: relative !important; /* برای اطمینان از اینکه آیکون نسبت به این کانتینر موقعیت‌یابی شود */
+}
+
+
+
+
+.ct-product-gallery-container {
+    position: relative !important; /* تنظیم موقعیت نسبی برای کانتینر */
+}
