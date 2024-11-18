@@ -30,12 +30,12 @@ function custom_availability($availability, $product) {
             $availability['class'] = 'availability-low-stock';
         } else {
             // موجودی کافی
-            $availability['availability'] = __('موجود است', 'my-custom-plugin');
+            $availability['availability'] = __('آماده ارسال',', 'my-custom-plugin');
             $availability['class'] = 'availability-in-stock';
         }
     } else {
         // اگر موجودی نداشته باشد
-        $availability['availability'] = __('متاسفیم، این محصول در حال حاضر موجود نیست', 'my-custom-plugin');
+        $availability['availability'] = __('متاسفیم، این محصول در حال حاضر تولید نمی‌شود ', 'my-custom-plugin');
         $availability['class'] = 'availability-out-of-stock';
     }
 

@@ -64,15 +64,8 @@
     }
 }
 
-
-
+/* */
 .ct-product-gallery-container {
     position: relative !important; /* برای اطمینان از اینکه آیکون نسبت به این کانتینر موقعیت‌یابی شود */
 }
 
-
-
-
-.ct-product-gallery-container {
-    position: relative !important; /* تنظیم موقعیت نسبی برای کانتینر */
-}

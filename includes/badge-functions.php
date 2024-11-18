@@ -32,6 +32,6 @@ function custom_product_badge() {
         echo '<span class="custom-badge custom-badge-low-stock">' . __('آماده ارسال', 'my-custom-plugin') . '</span>';
     } elseif (!$product->is_in_stock()) {
         // نمایش بج برای محصولات ناموجود
-        echo '<span class="custom-badge custom-badge-out-of-stock">' . __('ناموجود', 'my-custom-plugin') . '</span>';
+        echo '<span class="custom-badge custom-badge-out-of-stock">' . __('توقف تولید', 'my-custom-plugin') . '</span>';
     }
 }
